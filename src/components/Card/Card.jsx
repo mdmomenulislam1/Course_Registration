@@ -75,7 +75,7 @@ const Card = () => {
               <div className="">
                 <h2 className="card-title text-2xl text-black my-5 font-bold">{course.course_name}</h2>
                 <p className="text-black font-semibold my-3">{course.description}</p>
-                <div className="flex justify-between px-3 my-4 gap-2 md:gap-4 lg:gap-5 align-middle">
+                <div className="grid lg:grid-flow-col grid-flow-row justify-between my-4 gap-2 md:gap-4 lg:gap-5 align-middle">
                   <div className="flex">
                     <img src="/src/assets/dollar-sign-solid.svg" alt="" className="w-5" /> <p className="font-bold text-3xl pl-3">   {course.price}</p>
                   </div>
