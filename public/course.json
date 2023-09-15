@@ -2,7 +2,7 @@
     {
         "id": 1,
         "course_name": "Web Development Fundamentals",
-        "thumbnail": "/src/assets/Rectangle 2-1.png",
+        "thumbnail": "https://www.smartwebsolutions.org/blog/wp-content/uploads/2020/07/web-development.jpg",
         "description": "Learn the basics of web development, including HTML, CSS, and JavaScript.",
         "price": 49.99,
         "credit_hours": 4
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "course_name": "Responsive Web Design",
-        "thumbnail": "/src/assets/Rectangle 2-2.png",
+        "thumbnail": "https://th.bing.com/th/id/R.8974b6ffddb63f6fded83c2cd65623b5?rik=EuLeCM7T2ZEXeQ&pid=ImgRaw&r=0",
         "description": "Master the art of creating websites that adapt to different screen sizes.",
         "price": 59.99,
         "credit_hours": 5
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "course_name": "JavaScript for Web Developers",
-        "thumbnail": "/src/assets/Rectangle 2-3.png",
+        "thumbnail": "https://th.bing.com/th/id/OIP.qlMvRzG6U5O27PGO6Gr1ywAAAA?pid=ImgDet&rs=1",
         "description": "Dive deep into JavaScript and its applications in web development.",
         "price": 79.99,
         "credit_hours": 4
@@ -26,7 +26,7 @@
     {
         "id": 4,
         "course_name": "Front-End Web Development with React",
-        "thumbnail": "/src/assets/Rectangle 2-4.png",
+        "thumbnail": "https://th.bing.com/th/id/OIP.jzvt5tDaTTlQrCuabqTwuQHaDt?pid=ImgDet&rs=1",
         "description": "Build dynamic web applications using React.js and modern front-end tools.",
         "price": 99.99,
         "credit_hours": 3
@@ -34,7 +34,7 @@
     {
         "id": 5,
         "course_name": "Back-End Development with Node.js",
-        "thumbnail": "/src/assets/Rectangle 2-5.png",
+        "thumbnail": "https://th.bing.com/th/id/R.059969054e0f1cf4d430512642cf12ed?rik=Ul7F1YJBak2BcQ&pid=ImgRaw&r=0",
         "description": "Learn server-side programming with Node.js and create robust web APIs.",
         "price": 89.99,
         "credit_hours": 5
@@ -42,23 +42,23 @@
     {
         "id": 6,
         "course_name": "Full-Stack Web Development",
-        "thumbnail": "/src/assets/Rectangle 2-6.png",
+        "thumbnail": "https://th.bing.com/th/id/R.5219d9b3f4606ed553479e91b2b9b8d2?rik=0unuw4kUwn%2b7WA&pid=ImgRaw&r=0&sres=1&sresct=1",
         "description": "Become a full-stack developer by mastering both front-end and back-end technologies.",
-        "price": 149.99,
+        "price": 49.99,
         "credit_hours": 4
     },
     {
         "id": 7,
         "course_name": "Web Security and Ethical Hacking",
-        "thumbnail": "/src/assets/Rectangle 2.png",
+        "thumbnail": "https://th.bing.com/th/id/R.4ddecd1fb05fb69f09c26c65e8278a78?rik=iu9nnaHQ6qo7xw&pid=ImgRaw&r=0",
         "description": "Learn how to secure web applications and understand ethical hacking techniques.",
-        "price": 129.99,
+        "price": 69.99,
         "credit_hours": 5
     },
     {
         "id": 8,
         "course_name": "Web Design Principles",
-        "thumbnail": "/src/assets/Rectangle 3-1.png",
+        "thumbnail": "https://www.namasteui.com/wp-content/uploads/2020/10/web-design.jpg",
         "description": "Explore the principles of effective web design, including UI/UX concepts.",
         "price": 69.99,
         "credit_hours": 4
@@ -66,7 +66,7 @@
     {
         "id": 9,
         "course_name": "Web Development Project Management",
-        "thumbnail": "/src/assets/Rectangle 3.png",
+        "thumbnail": "https://th.bing.com/th/id/R.a6315ba3abbd790154c2903fe81e9edb?rik=R18RbTV7S20ojg&pid=ImgRaw&r=0&sres=1&sresct=1",
         "description": "Learn to manage web development projects efficiently and deliver on time.",
         "price": 79.99,
         "credit_hours": 3

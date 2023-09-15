@@ -15,7 +15,7 @@ const Cart = ({selectedCourses, remaining, totalTakenCredit, totalPayablePrice})
         <h1 className="text-2xl font-bold mb-2">Course Name: </h1>
 
         {selectedCourses.map((course) => (
-        <li key={course.id} className="list-disc text-[15px] font-semibold">{course.course_name}</li>
+        <li key={course.id} className="text-[15px] font-semibold list-decimal">{course.course_name}</li>
       ))}
         <hr className="my-5" />
         <h1 className="text-2xl font-bold">Total Course: {selectedCourses.length}</h1>

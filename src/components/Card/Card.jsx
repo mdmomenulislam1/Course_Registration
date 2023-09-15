@@ -2,6 +2,13 @@ import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Swal from 'sweetalert2';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
+
+
 const Card = () => {
 
   const [allCourses, setAllCourses] = useState([]);
@@ -15,7 +22,7 @@ const Card = () => {
   const maxCredit = 20;
 
   useEffect(() => {
-    fetch("/public/course.json")
+    fetch("course.json")
       .then((res) => res.json())
       .then((data) => setAllCourses(data));
   }, []);
@@ -29,7 +36,8 @@ const Card = () => {
     let payablePrice = course.price;
 
     if (isSelected) {
-      return Swal.fire({
+      
+      return  Swal.fire({
         title: 'Sorry!',
         text: 'You have selected already',
         icon: 'error',
@@ -70,17 +78,17 @@ const Card = () => {
       <div className="px-16 py-20 flex gap-8 bg-slate-100">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:gap-10 ">
           {allCourses.map((course) => (
-            <div key={course.id} className="card card-compact bg-white p-5 shadow-xl justify-around">
-              <figure><img src={course.thumbnail} alt="Shoes" className="w-full" /></figure>
+            <div key={course.id} className="w-[400px] card card-compact bg-white p-5 shadow-xl justify-around">
+              <figure><img src={course.thumbnail} alt="Shoes" className="w-[300px] h-[200px]" /></figure>
               <div className="">
-                <h2 className="card-title text-2xl text-black my-5 font-bold">{course.course_name}</h2>
+                <h2 className="card-title text-[25px] text-black my-5 font-bold">{course.course_name}</h2>
                 <p className="text-black font-semibold my-3">{course.description}</p>
                 <div className="grid lg:grid-flow-col grid-flow-row justify-between my-4 gap-2 md:gap-4 lg:gap-5 align-middle">
                   <div className="flex">
-                    <img src="/src/assets/dollar-sign-solid.svg" alt="" className="w-5" /> <p className="font-bold text-3xl pl-3">   {course.price}</p>
+                    <img src="https://th.bing.com/th/id/R.1a3c0f0e7f17a89264178563199a86df?rik=4NiiFErw%2bJ55HA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fd%2fb%2f8%2ff%2f1351622286410227529Dollar+Sign.svg.hi.png&ehk=329XBZQxIXRk5Qsp9AarL1XPH75CBGoJQbDyKgxZOBs%3d&risl=&pid=ImgRaw&r=0" alt="" className="w-5" /> <p className="font-bold text-3xl pl-3">   {course.price}</p>
                   </div>
                   <div className="flex">
-                    <img src="/src/assets/book-open-solid.svg" alt="" className="w-5" /><p className="font-bold text-3xl pl-3"> {course.credit_hours} hours</p>
+                    <img src="https://www.pngkit.com/png/detail/136-1361802_open-book-free-vector-icon-designed-by-freepik.png" alt="" className="w-5" /><p className="font-bold text-3xl pl-3"> {course.credit_hours} hr</p>
 
                   </div>
 
@@ -93,7 +101,7 @@ const Card = () => {
           ))}
         </div>
 
-        <div className="p-8 w-[500px] bg-white rounded-[15px]">
+        <div className="p-8 w-[350px] bg-white rounded-[15px]">
           <Cart
             selectedCourses={selectedCourses}
             remaining={remaining}
