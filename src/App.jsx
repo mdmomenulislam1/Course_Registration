@@ -1,10 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Home from './components/Home/Home'
 import Card from './components/Card/Card'
-import Cart from './components/Cart/Cart'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,8 +15,8 @@ function App() {
             <Card></Card>
         </div>
 
-        <div className="m-2 w-[400px]">
-          <Cart selectedCourses={selectedCourses}></Cart>
+        <div className="p-5 w-[400px]">
+          
         </div>
       </div>
     </>

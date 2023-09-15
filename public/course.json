@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "course_name": "Web Development Fundamentals",
         "thumbnail": "/src/assets/Rectangle 2-1.png",
         "description": "Learn the basics of web development, including HTML, CSS, and JavaScript.",
@@ -7,13 +8,15 @@
         "credit_hours": 3
     },
     {
+        "id": 2,
         "course_name": "Responsive Web Design",
         "thumbnail": "/src/assets/Rectangle 2-2.png",
         "description": "Master the art of creating websites that adapt to different screen sizes.",
         "price": 59.99,
-        "credit_hours": 2
+        "credit_hours": 5
     },
     {
+        "id": 3,
         "course_name": "JavaScript for Web Developers",
         "thumbnail": "/src/assets/Rectangle 2-3.png",
         "description": "Dive deep into JavaScript and its applications in web development.",
@@ -21,13 +24,15 @@
         "credit_hours": 4
     },
     {
+        "id": 4,
         "course_name": "Front-End Web Development with React",
         "thumbnail": "/src/assets/Rectangle 2-4.png",
         "description": "Build dynamic web applications using React.js and modern front-end tools.",
         "price": 99.99,
-        "credit_hours": 1
+        "credit_hours": 3
     },
     {
+        "id": 5,
         "course_name": "Back-End Development with Node.js",
         "thumbnail": "/src/assets/Rectangle 2-5.png",
         "description": "Learn server-side programming with Node.js and create robust web APIs.",
@@ -35,6 +40,7 @@
         "credit_hours": 5
     },
     {
+        "id": 6,
         "course_name": "Full-Stack Web Development",
         "thumbnail": "/src/assets/Rectangle 2-6.png",
         "description": "Become a full-stack developer by mastering both front-end and back-end technologies.",
@@ -42,13 +48,15 @@
         "credit_hours": 3
     },
     {
+        "id": 7,
         "course_name": "Web Security and Ethical Hacking",
         "thumbnail": "/src/assets/Rectangle 2.png",
         "description": "Learn how to secure web applications and understand ethical hacking techniques.",
         "price": 129.99,
-        "credit_hours": 2
+        "credit_hours": 5
     },
     {
+        "id": 8,
         "course_name": "Web Design Principles",
         "thumbnail": "/src/assets/Rectangle 3-1.png",
         "description": "Explore the principles of effective web design, including UI/UX concepts.",
@@ -56,10 +64,11 @@
         "credit_hours": 4
     },
     {
+        "id": 9,
         "course_name": "Web Development Project Management",
         "thumbnail": "/src/assets/Rectangle 3.png",
         "description": "Learn to manage web development projects efficiently and deliver on time.",
         "price": 79.99,
-        "credit_hours": 1
+        "credit_hours": 3
     }
 ]
