@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
+import Swal from 'sweetalert2';
 
 const Card = () => {
 
@@ -8,7 +9,7 @@ const Card = () => {
   const [remaining, setRemaining] = useState(0);
   const [totalTakenCredit, setTotalTakenCredit] = useState(0);
   const [totalPayablePrice, setTotalPayablePrice] = useState(0);
-  
+
 
 
   const maxCredit = 20;
@@ -28,7 +29,12 @@ const Card = () => {
     let payablePrice = course.price;
 
     if (isSelected) {
-     return alert('Already Selected');
+      return Swal.fire({
+        title: 'Sorry!',
+        text: 'You have selected already',
+        icon: 'error',
+        confirmButtonText: 'Go Back'
+      });
     }
     else {
       selectedCourses.forEach((item) => {
@@ -41,10 +47,21 @@ const Card = () => {
 
       const remaining = maxCredit - takenCredit;
 
-      setTotalPayablePrice(payablePrice)
-      setTotalTakenCredit(takenCredit)
-      setRemaining(remaining);
-      setSelectedCourses([...selectedCourses, course]);
+      if (takenCredit > maxCredit) {
+        return Swal.fire({
+          title: 'Credit Over!',
+          text: 'You have enrolled maximum credit limit already',
+          icon: 'error',
+          confirmButtonText: 'Close'
+        })
+      } else {
+        setTotalPayablePrice(payablePrice)
+        setTotalTakenCredit(takenCredit)
+        setRemaining(remaining);
+        setSelectedCourses([...selectedCourses, course]);
+      }
+
+
     }
   };
 
@@ -68,7 +85,7 @@ const Card = () => {
         </div>
       ))}
       <div>
-        <Cart 
+        <Cart
           selectedCourses={selectedCourses}
           remaining={remaining}
           totalTakenCredit={totalTakenCredit}

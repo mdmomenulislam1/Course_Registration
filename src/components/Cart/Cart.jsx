@@ -20,7 +20,7 @@ const Cart = ({selectedCourses, remaining, totalTakenCredit, totalPayablePrice})
 
         <h1>Total Course: {selectedCourses.length}</h1>
         <h1>Total Credit:{totalTakenCredit}</h1>
-        <h1>Total Price:{totalPayablePrice}</h1>
+        <h1>Total Price:{totalPayablePrice.toFixed(2)}</h1>
       </div>
     </div>
   );
