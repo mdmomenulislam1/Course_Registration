@@ -5,7 +5,7 @@
         "thumbnail": "/src/assets/Rectangle 2-1.png",
         "description": "Learn the basics of web development, including HTML, CSS, and JavaScript.",
         "price": 49.99,
-        "credit_hours": 3
+        "credit_hours": 4
     },
     {
         "id": 2,
@@ -45,7 +45,7 @@
         "thumbnail": "/src/assets/Rectangle 2-6.png",
         "description": "Become a full-stack developer by mastering both front-end and back-end technologies.",
         "price": 149.99,
-        "credit_hours": 3
+        "credit_hours": 4
     },
     {
         "id": 7,
